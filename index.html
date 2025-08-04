@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Protected Page</title>
+  <script>
+    const password = prompt("Enter password to view this site:");
+    const validPassword = "test123"; // 🔒 You can change this
+
+    if (password !== validPassword) {
+      document.write("<h1>Unauthorized</h1><p>Wrong password.</p>");
+    }
+  </script>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <p>This is a password-protected HTML page.</p>
+</body>
+</html>
